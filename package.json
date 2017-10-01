@@ -1,9 +1,13 @@
 {
   "name": "babel-preset-google-apps-script",
-  "version": "0.0.1",
-  "main": "src/index.js",
+  "version": "0.0.2",
+  "main": "dist/index.js",
+  "file": "dist",
   "repository": "https://github.com/eiel/babel-preset-google-apps-script",
   "author": "Tomohiko Himura <eiel.hal@gmail.com>",
+  "scripts": {
+    "build": "rollup src/index.js --output.format cjs --output.file dist/index.js"
+  },
   "license": "MIT",
   "dependencies": {
     "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",

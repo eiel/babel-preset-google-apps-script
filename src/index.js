@@ -19,7 +19,7 @@ import transformES3PropertyLiterals from "babel-plugin-transform-es3-property-li
 import transformExponetiationOperator from "babel-plugin-transform-exponentiation-operator";
 
 export default function() {
-  return: {
+  return {
     plugins: [
       transformES2015TemplateLiterals,
       transformES2015UnicodeRegex,
